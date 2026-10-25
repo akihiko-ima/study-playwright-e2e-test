@@ -1,0 +1,10 @@
+repos:
+  # python proj.
+  - repo: local
+    hooks:
+      - id: poe-check
+        name: poe check
+        entry: uv run poe check
+        language: system
+        types_or: [python, toml]
+        pass_filenames: false

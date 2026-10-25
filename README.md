@@ -27,6 +27,12 @@ Linux で Chromium の動作に必要なシステムライブラリが足りな�
 uv run playwright install --with-deps chromium
 ```
 
+pre-commit のフックを Git に登録します。登録すると、コミット時に `.pre-commit-config.yaml` のチェック（`poe check`）が自動で実行されます。
+
+```bash
+uv run pre-commit install
+```
+
 ## 実行
 
 ```bash
