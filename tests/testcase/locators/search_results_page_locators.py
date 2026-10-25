@@ -1,0 +1,2 @@
+class SearchResultsPageLocators:
+    pass

@@ -22,3 +22,8 @@ lint = "uv run ruff check --fix ."
 type-check = "uv run mypy ."
 
 check = ["format", "lint", "type-check"]
+
+[tool.mypy]
+# __init__.py を置かない名前空間パッケージ構成のため、リポジトリルートを基準にモジュール名を解決する
+explicit_package_bases = true
+mypy_path = "."

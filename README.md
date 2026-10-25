@@ -38,3 +38,7 @@ uv run pre-commit install
 ```bash
 uv run python tests/github_serarch.py
 ```
+
+```bash
+uv run pytest tests/testcase/tests/test_python_org_search.py --headed
+```
