@@ -42,3 +42,31 @@ uv run python tests/github_serarch.py
 ```bash
 uv run pytest tests/testcase/tests/test_python_org_search.py --headed
 ```
+
+```bash
+uv run pytest tests/ecomtestcase/tests/test_account_registration.py --headed
+```
+
+- trace viewer 必ず記録する
+
+```bash
+uv run pytest tests/ecomtestcase/tests/test_account_registration.py --tracing on
+```
+
+- trace viewer 失敗したとき、記録する
+
+```bash
+uv run pytest tests/ecomtestcase/tests/test_account_registration.py --tracing retain-on-failure
+```
+
+- trace viewerの結果確認
+
+```bash
+uv run playwright show-trace test-results/tests-ecomtestcase-tests-test-account-registration-py-test-register-account-chromium/trace.zip
+```
+
+- test結果をhtml出力
+
+```bash
+uv run pytest --tracing retain-on-failure --html=test-reports/report.html --self-contained-html
+```

@@ -10,3 +10,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# test-results
+test-results/
+test-reports/

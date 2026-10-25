@@ -1,0 +1,10 @@
+class RegisterPageLocators:
+    FIRST_NAME = "#input-firstname"
+    LAST_NAME = "#input-lastname"
+    EMAIL = "#input-email"
+    TELEPHONE = "#input-telephone"
+    PASSWORD = "#input-password"
+    PASSWORD_CONFIRM = "#input-confirm"
+    NEWSLETTER = "//input[@name='newsletter' and @value='1']"
+    PRIVACY_POLICY = "//input[@name='agree' and @value='1']"
+    CONTINUE_BUTTON = "//input[@value='Continue']"
